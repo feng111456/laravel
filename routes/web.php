@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+// Route::get('/layouts', function () {
+//     return view('layout');
+// });
+/**后台 */
+Route::get('/','admin\Admin@index');
