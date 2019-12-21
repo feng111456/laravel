@@ -148,14 +148,7 @@ class Cart extends Controller
      */
     public function destroy($id)
     {
-        $res = cart_model::find($id);
-        $res -> delete();
-
-        if($res){
-            echo "<script>alert('删除成功');location.href='/';</script>";
-        }else{
-            echo "删除失败";
-        }
+        //
     }
 
     /**

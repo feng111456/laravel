@@ -2,19 +2,26 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
+<<<<<<< HEAD
 	<link rel="icon" type="image/png" href="/assets/img/favicon.ico">
+=======
+	<link rel="icon" type="/assets/image/png" href="assets/img/favicon.ico">
+>>>>>>> 89ee12ac3f6fc4752bf9db9b6ace80a98dcb08c9
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Home</title>
+	<title>汽车之家 - @yield('title')</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
     <!-- Bootstrap core CSS     -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+
     <!-- Animation library for notifications   -->
     <link href="/assets/css/animate.min.css" rel="stylesheet"/>
+
     <!--  Light Bootstrap Table core CSS    -->
     <link href="/assets/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
+
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="/assets/css/demo.css" rel="stylesheet" />
 
@@ -39,7 +46,7 @@
 
     	<div class="sidebar-wrapper">
             <div class="logo">
-                <a href="#" class="simple-text">
+                <a href="{{url('/')}}" class="simple-text">
                     汽车之家
                 </a>
             </div>
@@ -52,11 +59,11 @@
                     </a>
                     <a href="#" class='none' sta='1'>
                         <i class="pe-7s-map-marker"></i>
-                        <p id=''>管理员</p>
+                        <p id=''>管理员添加</p>
                     </a>
                     <a href="#" class='none' sta='1'>
                         <i class="pe-7s-map-marker"></i>
-                        <p id=''>管理员</p>
+                        <p id=''>管理员展示</p>
                     </a>
                 </li>
                 <li>

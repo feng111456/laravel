@@ -4,8 +4,8 @@ namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
-class Admin extends Controller
+use App\Model\Admin\cart;
+class HomePage extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,9 @@ class Admin extends Controller
      */
     public function index()
     {
+        $cartInfo = Cart::limit(1)->first();
         
+        return view('admin/homepage/index',['cartInfo'=>$cartInfo]);
     }
 
     /**

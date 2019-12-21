@@ -19,8 +19,8 @@
 // });
 
 /**后台 */
-Route::get('/','admin\admin@index');
 
+Route::get('/','admin\HomePage@index');
 //商品商品模板
 Route::prefix('cart')->group(function () {
     Route::get('/','admin\Cart@index');//展示页面
@@ -31,3 +31,4 @@ Route::prefix('cart')->group(function () {
     Route::post('update/{id}','admin\Cart@update');//执行修改
     Route::post('checkonly','admin\Cart@checkonly');//ajax唯一
 });
+
