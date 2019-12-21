@@ -2,13 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-<<<<<<< HEAD
 	<link rel="icon" type="image/png" href="/assets/img/favicon.ico">
-=======
-	<link rel="icon" type="/assets/image/png" href="assets/img/favicon.ico">
->>>>>>> 89ee12ac3f6fc4752bf9db9b6ace80a98dcb08c9
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
 	<title>汽车之家 - @yield('title')</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
