@@ -18,4 +18,4 @@
 //     return view('layout');
 // });
 /**后台 */
-Route::get('/','admin\Admin@index');
+Route::get('/','admin\HomePage@index');
