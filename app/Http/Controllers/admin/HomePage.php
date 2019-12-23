@@ -15,7 +15,7 @@ class HomePage extends Controller
     public function index()
     {
         $cartInfo = Cart::limit(1)->first();
-        
+    
         return view('admin/homepage/index',['cartInfo'=>$cartInfo]);
     }
 

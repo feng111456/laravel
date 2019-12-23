@@ -19,3 +19,17 @@
 // });
 /**后台 */
 Route::get('/','admin\HomePage@index');
+/**管理员路由 */
+Route::prefix('/admin')->group(function () {
+    Route::get('index','Admin\Admin@index');
+    Route::get('create','Admin\Admin@create');
+    Route::post('store','Admin\Admin@store');
+    Route::get('destroy/{id}','Admin\Admin@destroy');
+    Route::get('edit/{id}','Admin\Admin@edit');
+    Route::post('update/{id}','Admin\Admin@update');
+    Route::post('checkAccount','Admin\Admin@checkAccount');
+    Route::post('del','Admin\Admin@del');
+});
+/**新闻路由 */
+Route::get('/news','admin\News@index');
+Route::get('/particulars','admin\News@particulars');

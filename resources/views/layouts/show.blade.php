@@ -26,11 +26,12 @@
 
 
     <!--     Fonts and icons     -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
-    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <!-- <link href="/assete/css/font-awesome.min.css" rel="stylesheet">
+    <link href='/assets/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="/assets/css/pe-icon-7-stroke.css" rel="stylesheet" />; -->
 
 </head>
+
 <body>
 
 <div class="wrapper">
@@ -56,11 +57,11 @@
                         <i class="pe-7s-user"></i>
                         <p id=''>管理员</p>
                     </a>
-                    <a href="#" class='none' sta='1'>
+                    <a href="{{url('/admin/create')}}" class='none' sta='1'>
                         <i class="pe-7s-map-marker"></i>
                         <p id=''>管理员添加</p>
                     </a>
-                    <a href="#" class='none' sta='1'>
+                    <a href="{{url('/admin/index')}}" class='none' sta='1'>
                         <i class="pe-7s-map-marker"></i>
                         <p id=''>管理员展示</p>
                     </a>
